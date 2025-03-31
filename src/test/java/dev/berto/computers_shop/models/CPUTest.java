@@ -6,7 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 
 public class CPUTest {
     @Test
-    @DisplayName("Test del enum del procesador del ordenador")
+    @DisplayName("Computer processor enum test")
     void testGetCPU() {
         assertEquals("Intel Core i3", CPU.INTEL_I3.getCPUName());
         assertEquals("Intel Core i5", CPU.INTEL_I5.getCPUName());

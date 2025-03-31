@@ -12,12 +12,12 @@ private ShopModel shop;
 
     @BeforeEach
     public void setUp() {
-        shop = new ShopModel("Ordenadores SL", "Eri", "123456789");
+        shop = new ShopModel("Ordenadores SL", "Berto", "123456789");
         computer = new ComputerModel(Brand.APPLE, Memory.RAM_256GB, CPU.APPLE_M1, OS.MACOS, 2000);
         shop.addComputer(computer);
     }
     @Test
-    @DisplayName("Test del constructor de ShopModel y los getters")
+    @DisplayName("Testing the ShopModel constructor and getters")
     public void testShopModel() {
         assertEquals("Ordenadores SL", shop.getShopName());
         assertEquals("Eri", shop.getOwner());
@@ -57,4 +57,6 @@ private ShopModel shop;
     public void testSearchComputerNull() {
         assertEquals(null, shop.searchComputer(Brand.MICROSOFT));
     }
+
+
 }

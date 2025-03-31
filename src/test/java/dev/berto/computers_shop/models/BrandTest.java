@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class BrandTest {
     @Test
-    @DisplayName("Test del enum de la marca del ordenador")
+    @DisplayName("Test of the enum of the computer brand")
     void testGetBrand() {
         assertEquals("Dell", Brand.DELL.getBrandName());
         assertEquals("HP", Brand.HP.getBrandName());
