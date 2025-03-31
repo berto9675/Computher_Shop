@@ -2,14 +2,14 @@ package dev.berto.computers_shop.controller;
 
 import java.util.List;
 import dev.berto.computers_shop.models.ComputerModel;
-import dev.berto.computers_shop.models.ShopModel;
+import dev.berto.computers_shop.models.ShopModelTest;
 import dev.berto.computers_shop.models.Brand;
 
 public class ShopController {
 
-    private final ShopModel shop;
+    private final ShopModelTest shop;
 
-    public ShopController(ShopModel shop) {
+    public ShopController(ShopModelTest shop) {
         this.shop = shop;
     }
 
